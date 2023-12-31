@@ -1,0 +1,50 @@
+$fondo1: #3D3B40;
+$texto-nombre:#BFCFE7;
+
+$ancho-calc:600px;
+$alto-calc:550px;
+//margin de la calculadora
+$separamiento: 20px;
+
+body
+{
+    border: 3px solid bisque;
+    width: $ancho-calc;
+    height: $alto-calc;
+    background-color: $fondo1;
+    margin-top:$separamiento;
+    margin-left:$separamiento;   
+}
+
+.tema .tema-titulo
+{
+    color: $texto-nombre;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:larger;
+    position: absolute;
+    top:35px;
+    left: 35px;
+}
+
+.tema .btn-dark
+{
+    position: absolute;
+    top: 30px;
+    left: 550px;
+}
+
+.tema .btn-light
+{
+    position: absolute;
+    top: 30px;
+    left: 480px;
+}
+
+.tema
+{
+    border: 3px solid bisque;
+    border-radius: 10px;
+    width: $ancho-calc;
+    height: 60px;
+    
+}

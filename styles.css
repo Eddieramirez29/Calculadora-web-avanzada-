@@ -1,0 +1,36 @@
+body {
+  border: 3px solid bisque;
+  width: 600px;
+  height: 550px;
+  background-color: #3D3B40;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.tema .tema-titulo {
+  color: #BFCFE7;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: larger;
+  position: absolute;
+  top: 35px;
+  left: 35px;
+}
+
+.tema .btn-dark {
+  position: absolute;
+  top: 30px;
+  left: 550px;
+}
+
+.tema .btn-light {
+  position: absolute;
+  top: 30px;
+  left: 480px;
+}
+
+.tema {
+  border: 3px solid bisque;
+  border-radius: 10px;
+  width: 600px;
+  height: 60px;
+}/*# sourceMappingURL=styles.css.map */
