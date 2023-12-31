@@ -1,8 +1,9 @@
 body {
   border: 3px solid bisque;
+  border-radius: 10px;
   width: 600px;
   height: 550px;
-  background-color: #3D3B40;
+  background-color: black;
   margin-top: 20px;
   margin-left: 20px;
 }
@@ -33,4 +34,37 @@ body {
   border-radius: 10px;
   width: 600px;
   height: 60px;
+}
+
+.pantalla {
+  width: 600px;
+  height: 100px;
+  position: absolute;
+  right: 746px;
+}
+
+.pantalla_superior {
+  border: 3px solid blue;
+  width: 600px;
+  height: 50px;
+  color: #F8EDFF;
+  font-size: 30px;
+  display: flex;
+  justify-content: right;
+  position: absolute;
+  right: 0px;
+  top: 45px;
+}
+
+.pantalla_inferior {
+  border: 3px solid greenyellow;
+  width: 600px;
+  height: 50px;
+  color: #F8EDFF;
+  font-size: 30px;
+  display: flex;
+  justify-content: right;
+  position: absolute;
+  right: -1px;
+  top: -2px;
 }/*# sourceMappingURL=styles.css.map */

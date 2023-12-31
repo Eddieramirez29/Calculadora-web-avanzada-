@@ -1,17 +1,22 @@
-$fondo1: #3D3B40;
+$fondo1: #F8FAE5;
 $texto-nombre:#BFCFE7;
 
 $ancho-calc:600px;
 $alto-calc:550px;
+$alto-pantalla:50px;
 //margin de la calculadora
 $separamiento: 20px;
+$color-numeros: #F8EDFF;
+$tamNumeros: 30px;
+$radio-esquina:10px;
 
 body
 {
     border: 3px solid bisque;
+    border-radius: $radio-esquina;
     width: $ancho-calc;
     height: $alto-calc;
-    background-color: $fondo1;
+    background-color: black;
     margin-top:$separamiento;
     margin-left:$separamiento;   
 }
@@ -45,6 +50,41 @@ body
     border: 3px solid bisque;
     border-radius: 10px;
     width: $ancho-calc;
-    height: 60px;
-    
+    height: 60px;   
+}
+
+.pantalla
+{
+    width: $ancho-calc;
+    height: 100px;
+    position: absolute;
+    right: 746px;
+}
+
+.pantalla_superior
+{
+    border: 3px solid blue;
+    width: $ancho-calc;
+    height: $alto-pantalla;
+    color: $color-numeros;
+    font-size: $tamNumeros;
+    display: flex;
+    justify-content: right;  
+    position: absolute;
+    right: 0px;
+    top: 45px;
+}
+
+.pantalla_inferior
+{
+    border: 3px solid greenyellow;
+    width: $ancho-calc;
+    height: $alto-pantalla;
+    color: $color-numeros;
+    font-size: $tamNumeros;
+    display: flex;
+    justify-content: right;
+    position: absolute;
+    right: -1px;
+    top: -2px;
 }
