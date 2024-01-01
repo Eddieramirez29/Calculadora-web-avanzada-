@@ -6,17 +6,17 @@ $alto-calc:550px;
 $alto-pantalla:50px;
 //margin de la calculadora
 $separamiento: 20px;
-$color-numeros: #F8EDFF;
+$color-numeros: #000000;
 $tamNumeros: 30px;
 $radio-esquina:10px;
 
 body
 {
-    border: 3px solid bisque;
+    // border: 3px solid rgb(233, 182, 119);
     border-radius: $radio-esquina;
     width: $ancho-calc;
     height: $alto-calc;
-    background-color: black;
+    background-color:#191919;
     margin-top:$separamiento;
     margin-left:$separamiento;   
 }
@@ -47,7 +47,6 @@ body
 
 .tema
 {
-    border: 3px solid bisque;
     border-radius: 10px;
     width: $ancho-calc;
     height: 60px;   
@@ -61,30 +60,31 @@ body
     right: 746px;
 }
 
-.pantalla_superior
-{
-    border: 3px solid blue;
-    width: $ancho-calc;
-    height: $alto-pantalla;
-    color: $color-numeros;
-    font-size: $tamNumeros;
-    display: flex;
-    justify-content: right;  
-    position: absolute;
-    right: 0px;
-    top: 45px;
-}
 
 .pantalla_inferior
 {
-    border: 3px solid greenyellow;
+
     width: $ancho-calc;
     height: $alto-pantalla;
     color: $color-numeros;
+    background-color: #BFCFE7;
+    caret-color: blueviolet;
     font-size: $tamNumeros;
     display: flex;
     justify-content: right;
     position: absolute;
     right: -1px;
     top: -2px;
+}
+
+.dropdown
+{
+    position: absolute;
+    top: 150px;
+}
+
+.dropdown #dropdownMenu2
+{
+    background-color: #D2E3C8;
+    color: #191919;
 }

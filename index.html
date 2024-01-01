@@ -17,15 +17,27 @@
     <!-- Botones para cambiar el tema -->
     <!-- Nombre de la calculadora -->
     <nav class="tema">
-        <div class="tema-titulo">Calculadora gráficadora</div>
-        <button type="button" class="btn btn-light ">Light</button>
-        <button type="button" class="btn btn-dark">Dark</button>
+        <div class="tema-titulo" id="titulo">Calculadora gráficadora</div>
+        <button type="button" class="btn btn-light" id="btnlight">Light</button>
+        <button type="button" class="btn btn-dark" id="btndark">Dark</button>
     </nav>
 
     <header class="pantalla">
-        <label class="pantalla_superior">0</label>
-        <label class="pantalla_inferior">0</label>
+        <input class="pantalla_inferior" type="text" placeholder="Enter an operation"></input>
     </header>
+    <!-- Botones deplegables -->
+    <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
+          Menú
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+          <li><button class="dropdown-item" type="button">Aritmética</button></li>
+          <li><button class="dropdown-item" type="button">Algebra básica</button></li>
+          <li><button class="dropdown-item" type="button">Geometría</button></li>
+        </ul>
+      </div>
+
+    <script src="./index.js"></script>
     
 </body>
 </html>

@@ -1,9 +1,8 @@
 body {
-  border: 3px solid bisque;
   border-radius: 10px;
   width: 600px;
   height: 550px;
-  background-color: black;
+  background-color: #191919;
   margin-top: 20px;
   margin-left: 20px;
 }
@@ -30,7 +29,6 @@ body {
 }
 
 .tema {
-  border: 3px solid bisque;
   border-radius: 10px;
   width: 600px;
   height: 60px;
@@ -43,28 +41,26 @@ body {
   right: 746px;
 }
 
-.pantalla_superior {
-  border: 3px solid blue;
-  width: 600px;
-  height: 50px;
-  color: #F8EDFF;
-  font-size: 30px;
-  display: flex;
-  justify-content: right;
-  position: absolute;
-  right: 0px;
-  top: 45px;
-}
-
 .pantalla_inferior {
-  border: 3px solid greenyellow;
   width: 600px;
   height: 50px;
-  color: #F8EDFF;
+  color: #000000;
+  background-color: #BFCFE7;
+  caret-color: blueviolet;
   font-size: 30px;
   display: flex;
   justify-content: right;
   position: absolute;
   right: -1px;
   top: -2px;
+}
+
+.dropdown {
+  position: absolute;
+  top: 150px;
+}
+
+.dropdown #dropdownMenu2 {
+  background-color: #D2E3C8;
+  color: #191919;
 }/*# sourceMappingURL=styles.css.map */
