@@ -12,7 +12,7 @@ $radio-esquina:10px;
 
 body
 {
-    // border: 3px solid rgb(233, 182, 119);
+    border: 3px solid rgb(233, 182, 119);
     border-radius: $radio-esquina;
     width: $ancho-calc;
     height: $alto-calc;
@@ -88,4 +88,11 @@ body
 {
     background-color: #D2E3C8;
     color: #191919;
+}
+
+#botonResultado
+{
+    position: absolute;
+    left: 470px;
+    top: 150px;
 }
