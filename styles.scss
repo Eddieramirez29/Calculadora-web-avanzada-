@@ -12,13 +12,19 @@ $radio-esquina:10px;
 
 body
 {
-    border: 3px solid rgb(233, 182, 119);
+    background-color:#191919;
+}
+
+.bodyCalculator
+{
+    //border: 3px solid rgb(233, 182, 119);
     border-radius: $radio-esquina;
+    border-bottom: 5px solid #3C4546;
     width: $ancho-calc;
     height: $alto-calc;
-    background-color:#191919;
+    background-color:#607274;
     margin-top:$separamiento;
-    margin-left:$separamiento;   
+    margin-left:$separamiento;  
 }
 
 .tema .tema-titulo
@@ -88,6 +94,13 @@ body
 {
     background-color: #D2E3C8;
     color: #191919;
+}
+
+#botonBorrar
+{
+    position: absolute;
+    top: 150px;
+    left: 413px;
 }
 
 #botonResultado

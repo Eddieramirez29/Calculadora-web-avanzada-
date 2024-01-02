@@ -17,30 +17,37 @@
     <title>Calculadora Avanzada</title>
 </head>
 <body>
-    <!-- Botones para cambiar el tema -->
+    
+
+      <main class="bodyCalculator">
+
+          <!-- Botones para cambiar el tema -->
     <!-- Nombre de la calculadora -->
     <nav class="tema">
-        <div class="tema-titulo" id="titulo">Calculadora gráficadora</div>
-        <button type="button" class="btn btn-light" id="btnlight">Light</button>
-        <button type="button" class="btn btn-dark" id="btndark">Dark</button>
-    </nav>
+      <div class="tema-titulo" id="titulo">Calculadora gráficadora</div>
+      <button type="button" class="btn btn-light" id="btnlight">Light</button>
+      <button type="button" class="btn btn-dark" id="btndark">Dark</button>
+  </nav>
 
-    <header class="pantalla">
-        <input class="pantalla_inferior" type="text" placeholder="Enter an operation"></input>
-    </header>
-    <!-- Botón para obtener resultado -->
-    <button type="button" class="btn btn-primary btn-lg" id="botonResultado">Calcular</button>
-    <!-- Botones deplegables -->
-    <div class="dropdown">
-        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
-          Menú
-        </button>
-        <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
-          <li><button class="dropdown-item" type="button">Aritmética</button></li>
-          <li><button class="dropdown-item" type="button">Algébra básica</button></li>
-          <li><button class="dropdown-item" type="button">Geometría</button></li>
-        </ul>
-      </div>
+  <header class="pantalla">
+      <input class="pantalla_inferior" type="text" placeholder="Enter an aritmethic or logic expression"></input>
+  </header>
+  <button type="button" class="btn btn-danger btn-lg" id="botonBorrar">Borrar</button>
+  <!-- Botón para obtener resultado -->
+  <button type="button" class="btn btn-primary btn-lg" id="botonResultado">Calcular</button>
+  <!-- Botones deplegables -->
+  <div class="dropdown">
+      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
+        Menú de teclados
+      </button>
+      <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+        <li><button class="dropdown-item" type="button">Aritmética</button></li>
+        <li><button class="dropdown-item" type="button">Algébra básica</button></li>
+        <li><button class="dropdown-item" type="button">Geometría</button></li>
+      </ul>
+    </div>
+      </main>
+
 
     <script src="./index.js"></script>
     <script  src="./aritmetica.js"></script>
