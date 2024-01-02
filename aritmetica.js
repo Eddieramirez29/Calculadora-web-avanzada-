@@ -7,6 +7,5 @@ botonResultado.addEventListener("click", function()
 {
     //Se obtiene la cadena de texto de la entrada de datos
     cadenaExpresion = entradaNumerica[0].value;
-    alert(math.evaluate(cadenaExpresion));
-
+    entradaNumerica[0].value = math.evaluate(cadenaExpresion);
 });
