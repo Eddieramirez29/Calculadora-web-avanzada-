@@ -14,3 +14,7 @@ botonNegro.addEventListener("click", function()
     document.body.style.backgroundColor = "#191919";
     titulo.style.color = "#D2E3C8";
 });
+
+
+
+

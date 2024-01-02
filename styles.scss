@@ -23,6 +23,7 @@ body
 
 .tema .tema-titulo
 {
+    border-radius: $radio-esquina;
     color: $texto-nombre;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size:larger;
@@ -47,10 +48,10 @@ body
 
 .tema
 {
-    border-radius: 10px;
     width: $ancho-calc;
     height: 60px;   
 }
+
 
 .pantalla
 {

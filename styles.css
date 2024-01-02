@@ -8,6 +8,7 @@ body {
 }
 
 .tema .tema-titulo {
+  border-radius: 10px;
   color: #BFCFE7;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-size: larger;
@@ -29,7 +30,6 @@ body {
 }
 
 .tema {
-  border-radius: 10px;
   width: 600px;
   height: 60px;
 }
