@@ -7,6 +7,7 @@ $alto-pantalla:50px;
 //margin de la calculadora
 $separamiento: 20px;
 $color-numeros: #000000;
+$fondoCalculadora: #607274;
 $tamNumeros: 30px;
 $radio-esquina:10px;
 
@@ -22,7 +23,7 @@ body
     border-bottom: 5px solid #3C4546;
     width: $ancho-calc;
     height: $alto-calc;
-    background-color:#607274;
+    background-color:$fondoCalculadora;
     margin-top:$separamiento;
     margin-left:$separamiento;  
 }
@@ -113,8 +114,10 @@ body
 
 //Estilo del panel que servirá de teclado
 #miPanel {
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
+    border-radius: 5px;
+    border: 1px solid rgb(255, 255, 255);
     background-color: #3498db; /* Puedes cambiar el color a tu preferencia */
     position: absolute;
     top:300px;
@@ -124,13 +127,24 @@ body
   #teclado
   {
     display: grid;
-      grid-template-columns: repeat(3, 1fr); /* Define tres columnas con tamaños iguales */
-      grid-template-rows: repeat(3, 50px); /* Define tres filas con alturas de 100px */
+      grid-template-columns: repeat(4, 1fr); /* Define tres columnas con tamaños iguales */
+      grid-template-rows: repeat(3, 50px); /* Define tres filas con alturas de 50px */
       grid-gap: 10px; /* Espaciado entre las celdas */
   }
 
-  .celda {
-    border: 1px solid #000;
-      padding: 10px;
-      text-align: center;
+  .celda 
+  {
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    border-style: none;
+    margin: 3px;
+    font-size: larger;
+    font-weight: bolder;
+  }
+
+  .celda:hover
+  {
+    background-color: $fondoCalculadora;
+    color: white;
   }
