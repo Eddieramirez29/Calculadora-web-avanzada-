@@ -8,12 +8,33 @@ $alto-pantalla:50px;
 $separamiento: 20px;
 $color-numeros: #000000;
 $fondoCalculadora: #607274;
+$fondo2:#191919;
 $tamNumeros: 30px;
 $radio-esquina:10px;
 
 body
 {
-    background-color:#191919;
+    background-color: $fondo2;
+}
+
+#barraDeNavegación
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    background-color: $fondo2;
+}
+
+#botonIngresar
+{
+    margin: 5px;
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */  
 }
 
 .bodyCalculator
@@ -52,6 +73,7 @@ body
     top: 30px;
     left: 480px;
 }
+
 
 .tema
 {
@@ -120,8 +142,8 @@ body
     border: 1px solid rgb(255, 255, 255);
     background-color: #3498db; /* Puedes cambiar el color a tu preferencia */
     position: absolute;
-    top:300px;
-    left: 275px;
+    top:265px;
+    left: 320px;
   }
 
   #teclado
