@@ -1,5 +1,6 @@
 $fondo1: #F8FAE5;
 $texto-nombre:#BFCFE7;
+$color-tecla-no-hover:#DE2229;
 
 $ancho-calc:600px;
 $alto-calc:550px;
@@ -168,5 +169,23 @@ body
   .celda:hover
   {
     background-color: $fondoCalculadora;
+    color: white;
+  }
+
+  .celda_2 
+  {
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    border-style: none;
+    margin: 3px;
+    font-size: larger;
+    font-weight: bolder;
+    background-color: $color-tecla-no-hover;
+  }
+
+  .celda_2:hover
+  {
+    
     color: white;
   }

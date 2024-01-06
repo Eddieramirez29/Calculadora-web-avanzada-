@@ -132,4 +132,19 @@ body {
 .celda:hover {
   background-color: #607274;
   color: white;
+}
+
+.celda_2 {
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px;
+  border-style: none;
+  margin: 3px;
+  font-size: larger;
+  font-weight: bolder;
+  background-color: #DE2229;
+}
+
+.celda_2:hover {
+  color: white;
 }/*# sourceMappingURL=styles.css.map */
