@@ -102,8 +102,8 @@ body {
 }
 
 #miPanel {
-  width: 300px;
-  height: 300px;
+  width: 320px;
+  height: 320px;
   border-radius: 5px;
   border: 1px solid rgb(255, 255, 255);
   background-color: #3498db; /* Puedes cambiar el color a tu preferencia */
@@ -123,7 +123,10 @@ body {
   padding: 10px;
   text-align: center;
   border-radius: 5px;
-  border-style: none;
+  border-top: 3px solid rgb(172, 137, 133);
+  border-left: 3px solid rgb(224, 185, 180);
+  border-right: 3px solid rgb(0, 0, 0);
+  border-bottom: 3px solid rgb(0, 0, 0);
   margin: 3px;
   font-size: larger;
   font-weight: bolder;
@@ -138,7 +141,10 @@ body {
   padding: 10px;
   text-align: center;
   border-radius: 5px;
-  border-style: none;
+  border-top: 3px solid salmon;
+  border-left: 3px solid salmon;
+  border-right: 3px solid rgb(124, 15, 3);
+  border-bottom: 3px solid rgb(124, 15, 3);
   margin: 3px;
   font-size: larger;
   font-weight: bolder;
