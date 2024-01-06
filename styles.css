@@ -106,7 +106,7 @@ body {
   height: 320px;
   border-radius: 5px;
   border: 1px solid rgb(255, 255, 255);
-  background-color: #3498db; /* Puedes cambiar el color a tu preferencia */
+  background-color: #0054DC; /* Puedes cambiar el color a tu preferencia */
   position: absolute;
   top: 265px;
   left: 320px;
@@ -124,7 +124,7 @@ body {
   text-align: center;
   border-radius: 5px;
   border-top: 3px solid rgb(172, 137, 133);
-  border-left: 3px solid rgb(224, 185, 180);
+  border-left: 3px solid rgb(172, 137, 133);
   border-right: 3px solid rgb(0, 0, 0);
   border-bottom: 3px solid rgb(0, 0, 0);
   margin: 3px;
@@ -153,4 +153,8 @@ body {
 
 .celda_2:hover {
   color: white;
+}
+
+button:active {
+  transform: scale(0.95);
 }/*# sourceMappingURL=styles.css.map */
