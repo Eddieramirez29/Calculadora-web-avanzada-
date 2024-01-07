@@ -1,5 +1,5 @@
-const botonResultado = document.getElementById("botonResultado");
 const botonBorrar = document.getElementById("botonBorrar");
+const botonResultado = document.getElementById("botonResultado");
 let entradaNumerica = document.getElementsByClassName("pantalla_inferior");
 
 let cadenaExpresion;
