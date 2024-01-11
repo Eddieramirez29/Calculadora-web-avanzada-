@@ -175,7 +175,7 @@ body
     color: white;
   }
 
-  .celda_2 
+ #boton_DEL, #boton_RESET
   {
     padding: 10px;
     text-align: center;
@@ -190,7 +190,7 @@ body
     background-color: $color-tecla-no-hover;
   }
 
-  .celda_2:hover
+  #boton_DEL:hover, #boton_RESET:hover
   { 
     color: white;
   }
