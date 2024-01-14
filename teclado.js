@@ -22,59 +22,106 @@ celdas.forEach(function (celda)
 
 function convertIdFromIdToNumber(id)
 {
-    let number;
+    let key;
     switch(id)
     {
       case "boton_0":
-        number = 0;
+        key = 0;
       break;
       case "boton_1":
-        number = 1;
+        key = 1;
       break;
       case "boton_2":
-        number = 2;
+        key = 2;
       break;
       case "boton_3":
-        number = 3;
+        key = 3;
       break;
       case "boton_4":
-        number = 4;
+        key = 4;
       break;
       case "boton_5":
-        number = 5;
+        key = 5;
       break;
       case "boton_6":
-        number = 6;
+        key = 6;
       break;
       case "boton_7":
-        number = 7;
+        key = 7;
       break;
       case "boton_8":
-        number = 8;
+        key = 8;
       break;
       case "boton_9":
-        number = 9;
+        key = 9;
       break;
       case "boton_dot":
-        number = ".";
+        key = ".";
       break;
       case "boton_suma":
-        number = "+";
+        key = "+";
       break;
       case "boton_resta":
-        number = "-";
+        key = "-";
       break;
       case "boton_multiplicacion":
-        number = "*";
+        key = "*";
       break;
       case "boton_division":
-        number = "/";
+        key = "/";
       break;
+      case "boton_raiz_cuadrada":
+        key = "sqrt";
+        break;
+      case "boton_X2":
+        key = "^";
+        break;
+      case "boton_percent":
+        key = "%";
+        break;
       default:
     }
-  cadenaEntrada = cadenaEntrada + number;
-  console.log(cadenaEntrada);
-  localStorage.setItem("cadenaEntrada", cadenaEntrada);
+  cadenaEntrada = cadenaEntrada + key;
+  //Evalua la raíz cuadrada
+  if(contieneNumeroCadena(cadenaEntrada))
+  {
+    //Descomponer la cadena en palabra y número
+    const matches = cadenaEntrada.match(/^([a-zA-Z]+)(\d+)$/);
+    if (matches)
+    {
+      // matches[1] contendrá la palabra
+      const palabra = matches[1];
+    
+      // matches[2] contendrá el número
+      const numero = matches[2];
+    
+      console.log("Palabra:", palabra);
+      console.log("Número:", numero);
+
+      cadenaEntrada = "sqrt(" + numero + ")";
+      
+    }
+    else
+    {
+      console.log("La cadena no cumple con el patrón especificado.");
+    }
+    localStorage.setItem("cadenaEntrada", cadenaEntrada);
+  }
+  else
+  {
+    console.log(cadenaEntrada);
+    localStorage.setItem("cadenaEntrada", cadenaEntrada);
+  }
+}
+
+//Validar sin la cadena está compuesta por una palabra y un número
+function contieneNumeroCadena(expresion)
+{
+  // Expresión regular para buscar una cadena junto con un número
+  const regex = /\d+\D*/;
+
+  // Devuelve true, si la cadena cumple con el patrón, false en caso contrario
+  return regex.test(expresion);
 }
 
 
