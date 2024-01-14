@@ -1,6 +1,12 @@
 $fondo1: #F8FAE5;
 $texto-nombre:#BFCFE7;
 $color-tecla-no-hover:#DE2229;
+//Bordes de los botones rojos
+$borderRedButtonsTopLeft:3px solid salmon;
+$borderRedButtonsBottomRight:3px solid rgb(124, 15, 3);
+//Bordes de los botones grises
+$borderGrayButtonsTopLeft:3px solid rgb(172, 137, 133);
+$borderGrayButtonsBottomRight:3px solid rgb(0, 0, 0);
 
 $ancho-calc:600px;
 $alto-calc:550px;
@@ -35,7 +41,7 @@ body
     margin: 5px;
     display: flex;
     justify-content: center; /* Centrar horizontalmente */
-    align-items: center; /* Centrar verticalmente */  
+    align-items: center; /* Centrar verticalmente */
 }
 
 .bodyCalculator
@@ -79,7 +85,7 @@ body
 .tema
 {
     width: $ancho-calc;
-    height: 60px;   
+    height: 60px;
 }
 
 
@@ -160,10 +166,10 @@ body
     padding: 10px;
     text-align: center;
     border-radius: 5px;
-    border-top: 3px solid rgb(172, 137, 133);
-    border-left: 3px solid rgb(172, 137, 133);
-    border-right: 3px solid rgb(0, 0, 0);
-    border-bottom: 3px solid rgb(0, 0, 0);
+    border-top: $borderGrayButtonsTopLeft;
+    border-left: $borderGrayButtonsTopLeft;
+    border-right: $borderGrayButtonsBottomRight;
+    border-bottom: $borderGrayButtonsBottomRight;
     margin: 3px;
     font-size: larger;
     font-weight: bolder;
@@ -180,10 +186,10 @@ body
     padding: 10px;
     text-align: center;
     border-radius: 5px;
-    border-top: 3px solid salmon;
-    border-left: 3px solid salmon;
-    border-right: 3px solid rgb(124, 15, 3);
-    border-bottom: 3px solid rgb(124, 15, 3);
+    border-top: $borderRedButtonsTopLeft;
+    border-left: $borderRedButtonsTopLeft;
+    border-right: $borderRedButtonsBottomRight;
+    border-bottom: $borderRedButtonsBottomRight;
     margin: 3px;
     font-size: larger;
     font-weight: bolder;
